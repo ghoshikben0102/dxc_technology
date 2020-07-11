@@ -1,0 +1,86 @@
+public class Calculator {
+	
+	public void add(int num,int num1) {
+		System.out.println(num+num1);
+	}
+	
+	public void add(double num,double num1 ) {
+		System.out.println(num+num1);
+	}
+	
+	public void add(int num,double num1 ) {
+		System.out.println(num+num1);
+	}
+	
+	public void add(double num,int num1 ) {
+		System.out.println(num+num1);
+	}
+	
+	public void diff(int num,int num1) {
+		System.out.println(num-num1);	
+	}
+	
+	public void diff(double num,double num1) {
+		System.out.println(num-num1);
+	}
+	
+	public void diff(int num,double num1) {
+		System.out.println(num-num1);	
+	}
+	
+	public void diff(double num,int num1) {
+		System.out.println(num-num1);	
+	}
+	
+	public void mul(int num,int num1) {
+		System.out.println(num*num1);
+	}
+	
+	public void mul(double num,double num1) {
+		System.out.println(num*num1);			
+	}	
+	
+	public void mul(int num,double num1) {
+		System.out.println(num*num1);	
+	}	
+	
+	public void mul(double num,int num1) {
+		System.out.println(num*num1);	
+	}
+	
+	public void div(int num,int num1) {
+		System.out.println(num/num1);	
+	}
+	
+	public void div(double num,double num1) {
+		System.out.println(num/num1);	
+	}
+	
+	public void div(int num,double num1) {	
+		System.out.println(num/num1);	
+	}
+	
+	public void div(double num,int num1) {
+		System.out.println(num/num1);	
+	}
+	
+	public static void main(String[] args) {
+		Calculator ca=new Calculator();
+		ca.add(6, 2);
+		ca.add(6.0, 2.0);
+		ca.add(6, 2.0);
+		ca.add(6.0, 2);
+		ca.diff(9, 3);
+		ca.diff(9.0, 3.0);
+		ca.diff(9, 3.0);
+		ca.diff(9.0, 3);
+		ca.mul(20, 2);
+		ca.mul(20.0, 2.0);
+		ca.mul(20, 2.0);
+		ca.mul(20.0, 2);
+		ca.div(200, 100);
+		ca.div(200.0, 100.0);
+		ca.div(200, 100.0);
+		ca.div(200.0, 100);	
+	}
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class QuantitySold {
+	public static void main(String[] args) {
+			Scanner sc =new Scanner(System.in);
+			double totalRetail=0;
+			while(true){
+				System.out.println("Enter product id to purchase: ");
+				int productnumber=sc.nextInt();
+				System.out.println("Enter quantity of purchase  ");
+				int quantitySold=sc.nextInt();
+			switch(productnumber){
+				case 1:
+					totalRetail+=22.50*quantitySold;
+					break;
+				case 2:
+					totalRetail+=44.50*quantitySold;
+					break;
+				case 3:
+					totalRetail+=9.98*quantitySold;
+					break;
+
+			}
+			System.out.println("Your total bill is "+totalRetail);
+			}
+	}
+}
