@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>USER FORM</title>
+<script type="text/javascript" src="Assessment3.js"></script>
+</head>
+<body>
+	<center>
+		<h1>
+			<font color="blue">User Form</font>
+		</h1>
+	</center>
+	<form>
+		<table border="2" align="center" bgcolor="pink" cellspacing="2"
+			cellpadding="2">
+			<tr>
+				<td>User Name :</td>
+				<td><input type="text" id="userName"></td>
+			</tr>
+			<tr>
+				<td>Spouse Name :</td>
+				<td><input type="text" id="spouseName"></td>
+			</tr>
+			<tr>
+				<td>Gender :</td>
+				<td><input type="radio" name="gender" id="male" value="male">Male
+					<br /> <input type="radio" name="gender" id="female" value="female">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Comments :</td>
+				<td><input type="radio" name="comments" id="like" value="like">Like
+					<br /> <input type="radio" name="comments" id="dontLike"
+					value="dontLike">Don't Like</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><input type="button" id="submit"
+					value="Submit" onclick="cal()"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span id=errUserName></span>
+				</div></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span id=errGender></span></td>
+			</tr>
+			<tr>
+				<td colspan="2"><span id=errComments></span>
+				</div></td>
+			</tr>
+
+
+
+
+
+		</table>
+
+
+	</form>
+
+</body>
+</html>
+
+
+===============================================================================================
+
+
+
+function cal()
+{
+	
+		var uname = document.forms[0].elements[0].value
+		var errUserName = document.getElementById("errUserName")
+		var errGender = document.getElementById("errGender")
+		var errComments = document.getElementById("errComments")
+		
+		
+		
+		if(uname.length == 0)
+		{
+			errUserName.innerHTML = "Name Should Not Be Empty"
+	        
+		}
+		else if(uname.length != 0){
+			
+			errUserName.innerHTML = "Name : " + uname
+		}
+	
+	with (document.forms[0])
+	{
+		if(gender[0].checked||gender[1].checked)
+		{
+			var gen=gender[0].checked?gender[0].value:gender[1].value
+			errGender.innerHTML = "Your Gender is : " + gen
+	        
+		}
+		else{
+			
+			errGender.innerHTML = "Please Select The Gender"
+		}
+	
+		if(comments[0].checked||comments[1].checked)
+		{
+			var com=comments[0].checked?comments[0].value:comments[1].value
+			errComments.innerHTML = "Your Comment is : " + com
+	        
+		}
+		else{
+			
+			errComments.innerHTML = "Please Select The Comment"
+		}
+		
+
+		}
+}
