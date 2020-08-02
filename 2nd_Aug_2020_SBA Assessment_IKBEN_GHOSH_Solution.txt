@@ -1,5 +1,4 @@
 https://transcripts.gotomeeting.com/#/s/1095d5144284b425e86b0ec5d4398dddb9897353472928c0db8c4c339dc982c9 (This was the first recording which is having some issues with the recording.)
-https://transcripts.gotomeeting.com/#/s/f7c50eb3d255531470fd029de4237bb9ffb0291358305c4dd0fd47292e470d55
 
 Question 1: create a network adaptor using PowerShell. The network adaptor name should be “MyLatestAdaptor”
 Ans : PS C:\WINDOWS\system32> Add-VMNetworkAdapter -VMName "MyFirtstVM" -SwitchName 'Default Switch' -Name 'MyLatestAdapter' (for creating network adapter)
