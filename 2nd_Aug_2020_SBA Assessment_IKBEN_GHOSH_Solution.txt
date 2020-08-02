@@ -22,4 +22,4 @@ Question 7:  Add the new hard disk space of 35 GB to existing VM
 Ans: Right click on vm > ID control 1 > hard drive > add > brouse >  MyAddedSpace > Apply > ok
 
 Question 8: The additional 35 GB hard disk should be mounted as Y: drive in the virtual machine.
-Ans : Right click windows > disk manbagement > disk 1 > ok > right click D1 > New simple voume > Next > next > format > format
+Ans : Right click windows > disk manbagement > disk 1 > ok > right click D1 > New simple voume > Next > drive letter: Y > next > format > format
